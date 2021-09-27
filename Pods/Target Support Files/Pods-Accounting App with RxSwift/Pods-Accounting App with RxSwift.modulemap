@@ -1,0 +1,6 @@
+framework module Pods_Accounting_App_with_RxSwift {
+  umbrella header "Pods-Accounting App with RxSwift-umbrella.h"
+
+  export *
+  module * { export * }
+}
