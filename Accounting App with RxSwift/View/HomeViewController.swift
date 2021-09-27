@@ -21,7 +21,12 @@ class HomeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let balance = homeViewModel.getBalance(url: resource!)
+        fatchBalance(resource: resource!)
+    }
+    
+    func fatchBalance(resource: URL) {
+        
+        let balance = homeViewModel.getBalance(url: resource)
             .observe(on: MainScheduler.instance)
             .retry(3)
             .catch { error in
@@ -32,6 +37,7 @@ class HomeViewController: UIViewController {
         balance.map { "₹ \($0)" }
             .drive(self.balanceLabel.rx.text)
             .disposed(by: disposedBag)
+        
     }
 
     @IBAction func addButton(_ sender: Any) {
