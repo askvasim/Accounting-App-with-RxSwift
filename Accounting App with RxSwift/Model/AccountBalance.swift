@@ -8,11 +8,7 @@
 import Foundation
 
 struct AccountBalance: Codable {
-    let balance: Int
+    let balance: Int?
+    let message: String?
 }
 
-//extension AccountBalance {
-//    static var empty: AccountBalance {
-//        return AccountBalance(balance: Int(UInt32(0)))
-//    }
-//}

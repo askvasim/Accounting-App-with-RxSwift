@@ -13,9 +13,8 @@ class TestViewModel: HomeNetworkProtocol {
     
     let balance = 40
     
-    func getBalance(url: URL) -> Observable<Int> {
+    func getBalance() -> Observable<Int> {
         return Observable.just(balance)
     }
-    
     
 }

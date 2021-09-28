@@ -16,29 +16,17 @@ class HomeViewController: UIViewController {
     
     var homeViewModel: HomeNetworkProtocol!
     
-    let resource = URL(string: "http://13.235.89.254:3001/api/balance")
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        fatchBalance(resource: resource!)
+        let balance = homeViewModel.getBalance()
+        balance.asDriver(onErrorJustReturn: 0)
+                .map { "₹ \($0)" }
+                .drive(self.balanceLabel.rx.text)
+                .disposed(by: disposedBag)
+        
     }
     
-    func fatchBalance(resource: URL) {
-        
-        let balance = homeViewModel.getBalance(url: resource)
-            .observe(on: MainScheduler.instance)
-            .retry(3)
-            .catch { error in
-                print(error.localizedDescription)
-                return Observable.just(0)
-            }.asDriver(onErrorJustReturn: 0)
-        
-        balance.map { "₹ \($0)" }
-            .drive(self.balanceLabel.rx.text)
-            .disposed(by: disposedBag)
-        
-    }
 
     @IBAction func addButton(_ sender: Any) {
         
