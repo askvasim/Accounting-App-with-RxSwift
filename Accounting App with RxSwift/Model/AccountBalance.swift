@@ -7,6 +7,14 @@
 
 import Foundation
 
+struct AccountStatus: Codable {
+    let accountBalance: AccountBalance
+    
+    static var empty: AccountStatus {
+        return AccountStatus(accountBalance: AccountBalance(balance: 0, message: ""))
+    }
+}
+
 struct AccountBalance: Codable {
     let balance: Int?
     let message: String?

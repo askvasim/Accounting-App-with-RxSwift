@@ -51,6 +51,7 @@
                     </navigationItem>
                     <connections>
                         <outlet property="balanceLabel" destination="uFz-77-NEy" id="Ycb-9j-Geo"/>
+                        <outlet property="transactionTableView" destination="vn9-AD-GSm" id="5et-55-wpN"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -103,6 +104,9 @@
                                                         <integer key="value" value="5"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="creditButton:" destination="NhS-a5-vCr" eventType="touchUpInside" id="Zpf-QG-lgV"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m23-IT-e92" userLabel="debitButton">
                                                 <rect key="frame" x="184.5" y="0.0" width="149.5" height="44"/>
@@ -115,6 +119,9 @@
                                                         <integer key="value" value="5"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="debitButton:" destination="NhS-a5-vCr" eventType="touchUpInside" id="gbi-6N-pQT"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <constraints>
@@ -137,6 +144,10 @@
                             <constraint firstItem="YMB-9M-cEd" firstAttribute="trailing" secondItem="P0k-Zf-TaW" secondAttribute="trailing" constant="20" id="vMi-y6-qR5"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="amountTextField" destination="51p-xM-OYc" id="0bx-u5-hut"/>
+                        <outlet property="titleTextField" destination="gCa-TL-Pk3" id="1xH-Hn-YcP"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="p9E-b0-UY2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

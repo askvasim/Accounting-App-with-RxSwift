@@ -21,5 +21,10 @@ extension SwinjectStoryboard {
             swinject.storyboardInitCompleted(HomeViewController.self) { resolvable, viewController in
                 viewController.homeViewModel = resolvable.resolve(HomeNetworkProtocol.self, name: "HomeNetworkProtocol")
             }
+        
+        swinject.storyboardInitCompleted(TransactionViewController.self) {resolvable, viewController in
+            viewController.transectionViewModel = resolvable.resolve(HomeNetworkProtocol.self, name: "HomeNetworkProtocol")
+        }
+        
         }
     }
