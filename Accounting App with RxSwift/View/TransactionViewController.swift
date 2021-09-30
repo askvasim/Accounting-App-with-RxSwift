@@ -15,7 +15,7 @@ class TransactionViewController: UIViewController {
     @IBOutlet weak var amountTextField: UITextField!
     @IBOutlet weak var titleTextField: UITextField!
     
-    var transectionViewModel: HomeNetworkProtocol!
+    var transectionViewModel: HomeViewModel!
     
     var disposedBag = DisposeBag()
     

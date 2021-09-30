@@ -18,7 +18,7 @@
 		41E9725F270171F6003CB3CC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 41E9725D270171F6003CB3CC /* LaunchScreen.storyboard */; };
 		41E9726B2701736B003CB3CC /* TransactionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41E9726A2701736B003CB3CC /* TransactionViewController.swift */; };
 		41E9726D270173C7003CB3CC /* AccountBalance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41E9726C270173C7003CB3CC /* AccountBalance.swift */; };
-		41E9726F270173E0003CB3CC /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41E9726E270173E0003CB3CC /* HomeViewModel.swift */; };
+		41E9726F270173E0003CB3CC /* DefaultHomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41E9726E270173E0003CB3CC /* DefaultHomeViewModel.swift */; };
 		41E97271270173F6003CB3CC /* SwinjectStoryboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41E97270270173F6003CB3CC /* SwinjectStoryboard.swift */; };
 		41F32FAA2703221E0033AD46 /* TransactionData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41F32FA92703221E0033AD46 /* TransactionData.swift */; };
 		41F32FAE270326D40033AD46 /* TransactionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41F32FAC270326D40033AD46 /* TransactionTableViewCell.swift */; };
@@ -38,7 +38,7 @@
 		41E97260270171F6003CB3CC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		41E9726A2701736B003CB3CC /* TransactionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionViewController.swift; sourceTree = "<group>"; };
 		41E9726C270173C7003CB3CC /* AccountBalance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountBalance.swift; sourceTree = "<group>"; };
-		41E9726E270173E0003CB3CC /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		41E9726E270173E0003CB3CC /* DefaultHomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultHomeViewModel.swift; sourceTree = "<group>"; };
 		41E97270270173F6003CB3CC /* SwinjectStoryboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwinjectStoryboard.swift; sourceTree = "<group>"; };
 		41F32FA92703221E0033AD46 /* TransactionData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionData.swift; sourceTree = "<group>"; };
 		41F32FAC270326D40033AD46 /* TransactionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionTableViewCell.swift; sourceTree = "<group>"; };
@@ -103,7 +103,7 @@
 		41E97267270172DE003CB3CC /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
-				41E9726E270173E0003CB3CC /* HomeViewModel.swift */,
+				41E9726E270173E0003CB3CC /* DefaultHomeViewModel.swift */,
 				41354ACA27018ABB002FDDC7 /* TestViewModel.swift */,
 			);
 			path = ViewModel;
@@ -275,7 +275,7 @@
 			files = (
 				41DF8503270436890058D214 /* TransactionResponse.swift in Sources */,
 				41E97257270171F5003CB3CC /* HomeViewController.swift in Sources */,
-				41E9726F270173E0003CB3CC /* HomeViewModel.swift in Sources */,
+				41E9726F270173E0003CB3CC /* DefaultHomeViewModel.swift in Sources */,
 				41E97271270173F6003CB3CC /* SwinjectStoryboard.swift in Sources */,
 				41354ACB27018ABB002FDDC7 /* TestViewModel.swift in Sources */,
 				41E97253270171F5003CB3CC /* AppDelegate.swift in Sources */,

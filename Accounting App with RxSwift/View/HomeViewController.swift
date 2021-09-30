@@ -15,7 +15,7 @@ class HomeViewController: UIViewController {
     
     var disposedBag = DisposeBag()
     
-    var homeViewModel: HomeNetworkProtocol!
+    var homeViewModel: HomeViewModel!
     var transactions: [Transaction]?
     
     override func viewDidAppear(_ animated: Bool) {

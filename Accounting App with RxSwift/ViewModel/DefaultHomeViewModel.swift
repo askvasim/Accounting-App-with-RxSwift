@@ -9,7 +9,7 @@ import Foundation
 import RxSwift
 import RxCocoa
 
-protocol HomeNetworkProtocol {
+protocol HomeViewModel {
     
     func getBalance() -> Observable<Int>
     
@@ -22,7 +22,7 @@ protocol HomeNetworkProtocol {
 }
 
 
-class HomeViewModel: HomeNetworkProtocol {
+class DefaultHomeViewModel: HomeViewModel {
     
     var disposedBag = DisposeBag()
     

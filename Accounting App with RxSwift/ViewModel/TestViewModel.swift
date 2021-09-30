@@ -9,7 +9,7 @@ import Foundation
 import RxSwift
 import RxCocoa
 
-class TestViewModel: HomeNetworkProtocol {
+class TestViewModel: HomeViewModel {
     
     
     func debitAmount(amount: String, title: String) -> Observable<String> {

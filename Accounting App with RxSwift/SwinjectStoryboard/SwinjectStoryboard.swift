@@ -14,16 +14,16 @@ extension SwinjectStoryboard {
     class func setup() {
             let swinject = defaultContainer
             
-            swinject.register(HomeNetworkProtocol.self, name: "HomeNetworkProtocol") { r in
-                HomeViewModel()
+            swinject.register(HomeViewModel.self, name: "HomeNetworkProtocol") { r in
+                DefaultHomeViewModel()
             }.inObjectScope(.container)
             
             swinject.storyboardInitCompleted(HomeViewController.self) { resolvable, viewController in
-                viewController.homeViewModel = resolvable.resolve(HomeNetworkProtocol.self, name: "HomeNetworkProtocol")
+                viewController.homeViewModel = resolvable.resolve(HomeViewModel.self, name: "HomeNetworkProtocol")
             }
         
         swinject.storyboardInitCompleted(TransactionViewController.self) {resolvable, viewController in
-            viewController.transectionViewModel = resolvable.resolve(HomeNetworkProtocol.self, name: "HomeNetworkProtocol")
+            viewController.transectionViewModel = resolvable.resolve(HomeViewModel.self, name: "HomeNetworkProtocol")
         }
         
         }
